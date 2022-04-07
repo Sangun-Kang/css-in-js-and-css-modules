@@ -1,0 +1,87 @@
+.Title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: palevioletred;
+}
+
+.Wrapper {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin: 0.25em;
+}
+
+.Button {
+  font-size: 1rem;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem;
+  border-radius: 3px;
+  background: white;
+}
+
+.Button.Primary {
+  background: palevioletred;
+  color: white;
+}
+
+.HoverDivLightreen {
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  background: none;
+}
+
+.HoverDivOrange {
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  background: none;
+}
+
+.HoverDivOrange:hover {
+  background: orange;
+}
+
+.HoverDivLightreen:hover {
+  background: lightgreen;
+}
+
+.Input {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem;
+}
+
+.Label {
+  align-items: center;
+  line-height: 1;
+}
+
+.Label::before {
+  content: '◀';
+  margin: 0 0.5rem;
+}
+
+.Thing {
+  color: blue;
+}
+.Thing:hover {
+  color: red;
+}
+.Thing ~ .Thing {
+  background: tomato;
+}
+.Thing + .Thing {
+  background: green;
+}
+.Thing.something {
+  background: orange;
+}
+.somethingElse .Thing {
+  border: 1px solid;
+}
